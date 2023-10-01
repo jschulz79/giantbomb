@@ -2,6 +2,8 @@ Giant Bomb search and rent application
 
 This app is built with Vaadin, Spring Boot, Kotlin, and Gradle.
 
+JDK 17 is required to run the application.
+
 Note, to run locally, you will need to put your GiantBomb api key
 in a file named `application-local.properties` files under `src/main/resources`
 in the format `api-key=yourkeyvaluehere`
@@ -18,3 +20,8 @@ There are a few ways to run it locally:
 ./gradlew clean build
 java -jar -Dspring.profiles.active=local ./build/libs/giantbomb.jar 
 ```
+
+There are 2 views/pages defined:
+
+http://localhost:8080/search
+http://localhost:8080/rent/<gameId>

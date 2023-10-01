@@ -23,5 +23,5 @@ java -jar -Dspring.profiles.active=local ./build/libs/giantbomb.jar
 
 There are 2 views/pages defined:
 
-http://localhost:8080/search
-http://localhost:8080/rent/<gameId>
+- http://localhost:8080/search (enter search term and click button)
+- http://localhost:8080/rent/<gameId> (shown when Rent button is clicked from search results)

@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component
 
 /**
  * classes that are more or less boilerplate for Vaadin to work
- * and global Spring Configuration
+ * along with global Spring Configuration classes
  */
 
 @Push(transport = Transport.LONG_POLLING)
@@ -37,6 +37,10 @@ class AppConfig {
 
 }
 
+/**
+ * This component adds the api key as a query parameter to each
+ * call made by the http client
+ */
 @Component
 class ApiKeyInterceptor(
     @Value("\${api-key}") val apiKey: String) : Interceptor {

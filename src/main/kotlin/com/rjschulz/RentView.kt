@@ -26,7 +26,7 @@ class RentView(
             optionalId.ifPresentOrElse(
                 { id -> displayGameDetails(id.toInt())}
         ) {
-            add(Span("Sorry, could not find that game"))
+            add(Span("Sorry, could not read the game id"))
         }
     }
 
